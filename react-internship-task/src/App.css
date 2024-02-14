@@ -1,0 +1,35 @@
+.game-container {
+  text-align: center;
+}
+
+.balloon {
+  width: 200px;
+  height: 300px;
+  background-color: #ff6384; /* You can change the color as per your preference */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.balloon::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ff6384;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.balloon::after {
+  content: "";
+  width: 30px;
+  height: 40px;
+  background-color: #ff6384;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
